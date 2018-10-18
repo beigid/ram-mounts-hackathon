@@ -4,7 +4,7 @@
     <h2>Essential Links</h2>
     <p> {{results}} </p>
     <p> {{errors}} </p>
-    <router-link v-bind:to="{name: 'home'}"> Home </router-link>
+   
 
   <form v-on:click.prevent="handleData">
   

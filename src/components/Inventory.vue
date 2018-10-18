@@ -4,8 +4,7 @@
     <h2>Essential Links</h2>
     <p> {{results}} </p>
     <p> {{errors}} </p>
-    <router-link v-bind:to="{name: 'home'}"> Home </router-link>
-    <router-link v-bind:to="{name: 'order'}"> Order </router-link>
+  
 
   <ul id="results">
     <li v-for="item in results.items">
@@ -58,5 +57,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+#myFooter {
+  bottom:0 imporant!;
 }
 </style>

@@ -60,4 +60,8 @@ a {
  50% { opacity:1; } 
  100% { opacity:0; } 
 }
+
+#myFooter {
+  bottom:0;
+}
 </style>
