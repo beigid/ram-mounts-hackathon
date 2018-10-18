@@ -1,7 +1,6 @@
 <template>
-  <div class="inventory">
-    <h1>Inventory List</h1>
-
+  <div class="promos">
+    <h1>Promotions</h1>
 <table id="invTable">
   <thead>
     <tr>
@@ -22,11 +21,8 @@
     </tr>
   </tbody>
 </table>
-
-
-
-
-</div>
+ hello
+  </div>
 </template>
 
 <script>
@@ -46,7 +42,7 @@ export default {
   },
   mounted: function () {
     axios
-    .get("http://jst.edchavez.com/api/inventory/getInventory")
+    .get("http://jst.edchavez.com/api/promo")
     .then(response => {
       this.results = response.data;
     })

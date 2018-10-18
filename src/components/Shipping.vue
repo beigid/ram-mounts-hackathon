@@ -1,7 +1,6 @@
 <template>
-  <div class="inventory">
+  <div class="shipping">
     <h1>Inventory List</h1>
-
 <table id="invTable">
   <thead>
     <tr>
@@ -22,17 +21,14 @@
     </tr>
   </tbody>
 </table>
-
-
-
-
-</div>
+ 
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
 export default {
-  name: 'Inventory',
+  name: 'Shipping',
   data () {
     return {
       results: null,

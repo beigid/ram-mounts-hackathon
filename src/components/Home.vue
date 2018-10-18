@@ -9,25 +9,15 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to my Hackathon Project!'
     }
   }
 }
 
-window.onload = function () {
- var logo = document.querySelector(".logo");
-var btn = document.querySelector(".navbar-toggler");
-btn.addEventListener("click", function(){
-  logo.classList.add("hideShow");
-  setTimeout(function(){
-    logo.classList.remove("hideShow");
-    }, 4000);
-});
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
 div.hello {
   margin-top:30px;
@@ -40,11 +30,11 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
+  display: block;
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #55b6cd;
 }
 
 .elementToFadeInAndOut {
@@ -59,9 +49,5 @@ a {
  0% { opacity:0; }
  50% { opacity:1; } 
  100% { opacity:0; } 
-}
-
-#myFooter {
-  bottom:0;
 }
 </style>

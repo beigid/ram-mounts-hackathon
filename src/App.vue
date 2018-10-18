@@ -3,10 +3,12 @@
 <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bgdark p-4">
-      <h4 class="text-white">Navigate to your needs!</h4>   
+      <h4 class="text-white">Navigate to different views!</h4>   
             <br><router-link to="/">Home</router-link>
-            <br><router-link to="/Order">Order</router-link>
             <br><router-link to="/Inventory">Inventory</router-link>
+            <br><router-link to="/Promos">Promotions</router-link>        
+            <br><router-link to="/Shipping">Shipping</router-link>
+            <br><router-link to="/Order">Order</router-link>
     </div>
   </div>
   <nav class="navbar navbar-dark">
@@ -18,15 +20,6 @@
 </div>
     <router-view/>
 
-<!-- Footer -->
-<footer id="myFooter">
-       
-        <div class="footer-copyright">
-            <p>© 2018 Darya's cool project </p>
-        </div>
-    </footer>
-  <!-- Footer -->
-
   </div>  
 </template>
 
@@ -37,6 +30,12 @@
 export default {
   name: 'App'
 }
+
+$(document).ready(function(){
+    $(".navbar-toggler").click(function(){
+        $(".logo").fadeToggle()
+    });
+});
 
 </script>
 
@@ -70,25 +69,18 @@ img.logo {
     left: 10px;
 }
 
-.elementToFadeInAndOut {
-    animation: fadeInOut 4s linear forwards;
-}
-
 #myFooter{
-    left: 0;
     padding-top:20px;
-    position: absolute;
     width: 100%;
 	background-color: #373a48;
 	color:white;
 }
 
+h1 {
+  padding: 40px 0 20px 0;
+}
 
-
-
-@media screen and (max-width: 767px){
 	#myFooter {
 		text-align: center;
 	}
-}
 </style>
