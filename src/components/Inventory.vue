@@ -2,9 +2,6 @@
   <div class="inventory">
     <h1>Inventory List</h1>
 
-<!-- <select v-model="item.name">
-    <option v-for="item in results.items"> {{item.name}} </option>
-</select> -->
 
 <table id="invTable">
   <thead>
@@ -26,6 +23,7 @@
     </tr>
   </tbody>
 </table>
+
 
 
 
@@ -99,7 +97,7 @@ a {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #204448;
+    background-color: #940505;
     color: white;
 
 }

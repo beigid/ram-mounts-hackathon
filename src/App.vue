@@ -4,7 +4,7 @@
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bgdark p-4">
       <h4 class="text-white">Navigate to different views!</h4>   
-            <br><router-link to="/">Home</router-link>
+            <br><router-link to="/" class="link">Home</router-link>
             <br><router-link to="/Inventory">Inventory</router-link>
             <br><router-link to="/Promos">Promotions</router-link>        
             <br><router-link to="/Shipping">Shipping</router-link>
@@ -53,6 +53,31 @@ $(document).ready(function(){
   text-decoration:none;
 }
 
+a {
+  color: #d9eaee;
+}
+
+a:hover {
+  color:gray;
+}
+
+/* .link {
+  display: inline-block;
+}
+
+.link:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.link:hover:after {
+  width: 99%;
+} */
+
 .navbar {
   display: inherit;
   text-align:right;
@@ -64,7 +89,7 @@ $(document).ready(function(){
 
 img.logo {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     position: absolute;
     left: 10px;
 }

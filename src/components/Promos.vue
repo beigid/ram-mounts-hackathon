@@ -4,17 +4,19 @@
 <table id="invTable">
   <thead>
     <tr>
-      <th> Name</th>
-      <th> Description</th>
-      <th> Price</th>
-      <th> Item ID</th>
-      <th> In Stock?</th>
+       <th>Promotion Name</th>
+       <th> Duration (Start to End)</th>
+      <th> Order Subtotal</th>
+      <th> Promo Amounts</th>
+      <th> Promo ID</th>
+      <th> Minimum Order Value</th>
+      <th> Promotion Type</th>
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in results.items">
-      <td> {{item.name}} </td>
-      <td> {{item.description}} </td>
+    <tr v-for="item in results">
+      <td> {{item.promotionName}} </td>
+      <td> {{item.start}}  - {{item.end}}</td>
       <td> {{item.price | currency}} </td>
       <td> {{item.itemId}} </td>
       <td> {{item.inStock === true ? 'Yes' : 'No'}} </td>
