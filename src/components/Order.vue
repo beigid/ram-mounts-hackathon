@@ -17,13 +17,19 @@
       <!-- quantity -->
       <div class="field" v-if="!isHidden">
         <label class="label">Quantity </label>
-        <input type="number" class="input" name="email" v-model="quantity">
+        <input type="number" class="input" name="quantity" v-model="quantity">
       </div>
 
          <!-- description -->
       <div class="field" v-if="!isHidden">
         <label class="label">Description of Item Specifics <br><i>(Leave blank if not applicable)</i></label>
-        <input type="email" class="input" name="email" v-model="description">
+        <input type="text" class="input" name="email" v-model="description">
+      </div>
+
+           <!-- email -->
+      <div class="field" v-if="!isHidden">
+        <label class="label">E-mail</label>
+        <input type="email" class="input" name="email" v-model="email" placeholder="youremail@example.com">
       </div>
 
     <div class="shippingOption" v-if="!isHidden">
@@ -48,7 +54,7 @@
          <p><b> Tax total:</b> {{results.submittedOrder.taxTotal | currency}} </p>
           <hr/>
           <p><b> Price:</b> {{results.submittedOrder.orderItems[0].price | currency}} </p>
-
+          <p><br> Your order information has been sent to <b>{{email}}</b> </p>
       </div> 
     </div>
   </form>
@@ -71,7 +77,8 @@ export default {
       name: '',
       quantity: '',
       description: '',
-      isHidden: false
+      isHidden: false,
+      email: ''
     };
   },
   filters: {
