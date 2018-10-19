@@ -138,4 +138,11 @@ button.navbar-toggler {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+@media (max-width:500px) {
+#myFooter {
+  position: fixed;
+  bottom: 0;
+}
+}
 </style>

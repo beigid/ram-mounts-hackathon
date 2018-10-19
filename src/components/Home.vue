@@ -96,5 +96,20 @@ a {
     padding-bottom:3%;
  }
 
+@media (max-width:500px) {
+.lead-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 10px 10px 30px 10px;
+    }
+ h1 {
+   font-size: 40px;
+   } 
+  p {
+    font-size:20px;
+  }
+  }
+
+
 
 </style>

@@ -170,4 +170,13 @@ hr {
       width: 40%;
     }
   }
+
+  @media (max-width:500px) {
+.boxFix{
+  margin-bottom:200px;
+}
+.order {
+  max-width:100%;
+}
+}
 </style>

@@ -109,4 +109,10 @@ a {
   height: 100vh;
     width: 100vw;
 }
+
+@media (max-width:500px) {
+table {
+  margin-bottom:150px;
+}
+}
 </style>
