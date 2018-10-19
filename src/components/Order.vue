@@ -16,7 +16,7 @@
 
       <!-- quantity -->
       <div class="field">
-        <label class="label">Quantity (available {{results.orderItems[0].stock}} )</label>
+        <label class="label">Quantity (available {{obj.orderItems[0].stock}} )</label>
         <input type="text" class="input" name="email">
       </div>
 

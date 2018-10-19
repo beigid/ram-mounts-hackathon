@@ -1,6 +1,6 @@
 <template>
   <div class="inventory">
-    <h1>Inventory List</h1>
+    <h1 class="display-4">Inventory List</h1>
 
 
 <table id="invTable">

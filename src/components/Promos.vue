@@ -1,15 +1,14 @@
 <template>
   <div class="promos">
-    <h1>Promotions</h1>
+    <h1 class="display-4">Promotions</h1>
 <table id="invTable">
   <thead>
     <tr>
        <th>Promotion Name</th>
        <th> Duration (Start to End)</th>
-      <th> Order Subtotal</th>
+       <th> Minimum Order Value</th>
       <th> Promo Amounts</th>
       <th> Promo ID</th>
-      <th> Minimum Order Value</th>
       <th> Promotion Type</th>
     </tr>
   </thead>
@@ -17,13 +16,14 @@
     <tr v-for="item in results">
       <td> {{item.promotionName}} </td>
       <td> {{item.start}}  - {{item.end}}</td>
-      <td> {{item.price | currency}} </td>
-      <td> {{item.itemId}} </td>
-      <td> {{item.inStock === true ? 'Yes' : 'No'}} </td>
+      <td> {{item.minimumOrderValue}} </td>
+      <td> {{item.promoAmt}} </td>
+      <td> {{item.promoId}} </td>
+      <td> {{item.promotionType}} </td>
     </tr>
   </tbody>
 </table>
- hello
+
   </div>
 </template>
 

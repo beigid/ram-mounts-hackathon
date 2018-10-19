@@ -1,23 +1,21 @@
 <template>
   <div class="shipping">
-    <h1>Inventory List</h1>
+    <h1 class="display-4">Shipping Options</h1>
 <table id="invTable">
   <thead>
     <tr>
-      <th> Name</th>
-      <th> Description</th>
-      <th> Price</th>
-      <th> Item ID</th>
-      <th> In Stock?</th>
+      <th> Shipping Options ID</th>
+      <th> Shipping Option Name</th>
+      <th> Shipping Cost</th>
+      <th> Carrier Name</th>
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in results.items">
-      <td> {{item.name}} </td>
-      <td> {{item.description}} </td>
-      <td> {{item.price | currency}} </td>
-      <td> {{item.itemId}} </td>
-      <td> {{item.inStock === true ? 'Yes' : 'No'}} </td>
+    <tr v-for="item in results">
+      <td> {{item.shipOptionId}} </td>
+      <td> {{item.shipOptionName}} </td>
+      <td> {{item.shipCost | currency}} </td>
+      <td> {{item.carrierName}} </td>
     </tr>
   </tbody>
 </table>
@@ -42,7 +40,7 @@ export default {
   },
   mounted: function () {
     axios
-    .get("http://jst.edchavez.com/api/inventory/getInventory")
+    .get("http://jst.edchavez.com/api/shipping")
     .then(response => {
       this.results = response.data;
     })
