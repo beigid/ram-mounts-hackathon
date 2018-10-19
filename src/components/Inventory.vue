@@ -28,11 +28,11 @@
 </table>
 
 
-  <select class="form-control" :required="true" @change="changeLocation" v-model="item.name">
+  <select class="form-control" :required="true" @change="changeLocation">
    <option :selected="true">Choose Inventory</option>
    <option v-for="item in results.items" v-bind:value="item.itemId" >{{ item.name }}</option>
   </select>
-<p>{{item.name}}</p>
+
 
 
 
