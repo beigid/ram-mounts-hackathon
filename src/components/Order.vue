@@ -36,7 +36,7 @@
         <p><br><b> Transaction ID:</b> {{results.transactionId}} </p>
         <p><b> Merchant ID:</b> {{results.submittedOrder.merchantId}} </p>
         
-         <p><b> Tax total:</b> {{results.submittedOrder.taxTotal}} </p>
+         <p><b> Tax total:</b> {{results.submittedOrder.taxTotal | currency}} </p>
           <hr/>
           <p><b> Price:</b> {{results.submittedOrder.orderItems[0].price | currency}} </p>
 

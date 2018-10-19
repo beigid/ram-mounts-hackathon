@@ -54,11 +54,7 @@ $(document).ready(function(){
 }
 
 a {
-  color: #d9eaee;
-}
-
-a:hover {
-  color:gray;
+  color: #d9eaee !important;
 }
 
 .link {
