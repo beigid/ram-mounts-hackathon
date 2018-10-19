@@ -94,4 +94,10 @@ a {
     color: white;
 
 }
+
+
+.shipping {
+  height: 100vh;
+    width: 100vw;
+}
 </style>

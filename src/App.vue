@@ -5,10 +5,10 @@
     <div class="bgdark p-4">
       <h4 class="text-white">Navigate to different views!</h4>   
             <br><router-link to="/" class="link">Home</router-link>
-            <br><router-link to="/Inventory">Inventory</router-link>
-            <br><router-link to="/Promos">Promotions</router-link>        
-            <br><router-link to="/Shipping">Shipping</router-link>
-            <br><router-link to="/Order">Order</router-link>
+            <br><router-link to="/Inventory" class="link">Inventory</router-link>
+            <br><router-link to="/Promos" class="link">Promotions</router-link>        
+            <br><router-link to="/Shipping" class="link">Shipping</router-link>
+            <br><router-link to="/Order" class="link">Order</router-link>
     </div>
   </div>
   <nav class="navbar navbar-dark">
@@ -61,7 +61,7 @@ a:hover {
   color:gray;
 }
 
-/* .link {
+.link {
   display: inline-block;
 }
 
@@ -70,13 +70,13 @@ a:hover {
   width: 0px;
   height: 1px;
   display: block;
-  background: black;
+  background: white;
   transition: 300ms;
 }
 
 .link:hover:after {
   width: 99%;
-} */
+}
 
 .navbar {
   display: inherit;
@@ -92,6 +92,7 @@ img.logo {
     max-width: 120px;
     position: absolute;
     left: 10px;
+    top:5px;
 }
 
 #myFooter{
@@ -107,10 +108,19 @@ h1 {
 
 	#myFooter {
 		text-align: center;
+    padding-bottom:20px
 	}
 
-button {
+button.navbar-toggler {
       position: absolute;
     right: 10px;
+}
+
+i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+
 }
 </style>

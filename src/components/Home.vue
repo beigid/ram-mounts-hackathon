@@ -1,29 +1,16 @@
 <template>
   <div class="home">
     <div class="container">
-        <div class="row">
           <div class="col-md-12 col-md-offset-3">
             <div class="lead-form">
-              <h1 class="text-center">Hackathon!</h1>
+              <h1 class="text-center display-4">Hackathon!</h1>
               <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Starting Zip" v-model="startingZip">
-                  <span class="city-span">{{startingCity}}</span>
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Ending Zip" v-model="endingZip">
-                  <span class="city-span">{{endingCity}}</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <button class="btn btn-primary btn-block" id="submit-form">Submit</button>
-                </div>
+              <div class="text">
+              <p> {{msg}} </p>
+              <p> Please navigate to the various areas to check inventory, shipping costs, promotions, and submit an order! </p>
               </div>
             </div><!-- end of .lead-form -->
           </div> <!-- end of .col-md-6.col-md-offset-3 -->
-        </div> <!-- end of .row -->
       </div> <!-- end of .container -->
   </div>
 </template>"
@@ -78,14 +65,9 @@ a {
 .home {
     height: 100vh;
     width: 100vw;
-    background-color: red;
-    background: url("https://c7.alamy.com/comp/BHAB5J/an-adult-dall-sheep-ram-standing-on-mount-margrett-with-the-alaska-BHAB5J.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: linear-gradient(to bottom left, #81dfff 0%, #1c6e98 100%);
   }
-  
+
   #submit-form {
     margin-top: 40px;
   }
@@ -104,7 +86,13 @@ a {
     margin-top: 10px;
   }
   
-  .form-control {
-    margin-bottom: 3px;
-  }
+ .text {
+   font-size: 30px;
+ }
+
+ .text p {
+    padding-bottom:3%;
+ }
+
+
 </style>

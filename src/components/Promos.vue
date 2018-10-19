@@ -98,4 +98,9 @@ a {
     color: white;
 
 }
+
+.promos {
+  height: 100vh;
+    width: 100vw;
+}
 </style>
