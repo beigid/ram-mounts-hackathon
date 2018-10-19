@@ -55,6 +55,7 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+   padding-top:40px;
 }
 ul {
   list-style-type: none;

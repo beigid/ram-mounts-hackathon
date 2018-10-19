@@ -10,7 +10,7 @@
     <form id="merchant-form">
       <!-- name -->
       <div class="field" v-if="!isHidden">
-        <label class="label">Name</label>
+        <label class="label">Item Name</label>
         <input type="text" class="input" name="name" v-model="name">
       </div>
 
@@ -22,13 +22,22 @@
 
          <!-- description -->
       <div class="field" v-if="!isHidden">
-        <label class="label">Description of Item Specifics</label>
+        <label class="label">Description of Item Specifics (Leave blank if not applicable)</label>
         <input type="email" class="input" name="email" v-model="description">
       </div>
 
-      <!-- submit button -->
+    <div class="shippingOption" v-if="!isHidden">
+       <label class="label">Shipment Method</label>
+      <select v-model="selected">
+  <option>US Standard</option>
+  <option>International Standard</option>
+  </select>
+  </div>
 
-  <button v-on:click.prevent="handleData" v-on:click="isHidden = true" type="submit" class="btn btn-success"> Submit
+
+      <!-- submit button -->
+<div>
+  <button v-on:click.prevent="handleData" v-on:click="isHidden = true"  v-if="!isHidden" type="submit" class="btn btn-success"> Submit
     </button>  
           <div v-if="submitted">
         <br><b> {{results.status = "Congratulations! Your order has been submitted"}} </b> 
@@ -41,6 +50,7 @@
           <p><b> Price:</b> {{results.submittedOrder.orderItems[0].price | currency}} </p>
 
       </div> 
+    </div>
   </form>
 
   </div>
@@ -109,6 +119,7 @@ export default {
 h1,
 h2 {
   font-weight: normal;
+  padding-top:40px;
 }
 ul {
   list-style-type: none;
@@ -130,6 +141,15 @@ a {
   margin: 0 auto;
 }
 
+button.btn  {
+  text-align:center;
+  margin-top:40px;
+}
+
+hr {
+  background-color: #7385aa
+}
+
 .order {
   height: 100vh;
     width: 100vw;
@@ -138,5 +158,9 @@ a {
 
   form p {
     text-align: left
+  }
+
+  .shippingOption {
+    text-align:left;
   }
 </style>
