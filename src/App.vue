@@ -108,4 +108,9 @@ h1 {
 	#myFooter {
 		text-align: center;
 	}
+
+button {
+      position: absolute;
+    right: 10px;
+}
 </style>
