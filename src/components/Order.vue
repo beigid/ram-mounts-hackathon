@@ -22,7 +22,7 @@
 
          <!-- description -->
       <div class="field" v-if="!isHidden">
-        <label class="label">Description of Item Specifics (Leave blank if not applicable)</label>
+        <label class="label">Description of Item Specifics <br><i>(Leave blank if not applicable)</i></label>
         <input type="email" class="input" name="email" v-model="description">
       </div>
 
@@ -120,6 +120,7 @@ h1,
 h2 {
   font-weight: normal;
   padding-top:40px;
+  padding-bottom:50px  
 }
 ul {
   list-style-type: none;
