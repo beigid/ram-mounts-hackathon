@@ -138,7 +138,7 @@ a {
 }
 
 .boxFix {
-  width:40%;
+  width:100%;
   margin: 0 auto;
 }
 
@@ -163,5 +163,11 @@ hr {
 
   .shippingOption {
     text-align:left;
+  }
+
+  @media ( min-width: 990px) {
+    .boxFix {
+      width: 40%;
+    }
   }
 </style>
